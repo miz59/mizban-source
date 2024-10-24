@@ -10,7 +10,7 @@ function editor_panelManager(editor) {
                 id:"codeEditor",
                 className: 'btn-toggle-borders',
                 label: '<i class="fa fa-code"></i>',
-                command:"html-import-test",
+                command:"code-editor",
                 readOnly:0,
             }
             ,

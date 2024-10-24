@@ -1,11 +1,11 @@
 import componentJson from "../../../../commands/componentJson.js";
 
 const category = {
-    layouts: {id: "layouts_category", label: "Layouts",open: true},
+    components: {id: "components_category", label: "Components",open: true  },
     heading: {id: "heading_category", label: "Heading", open: false},
     basic: {id: "basic_category", label: "Basic", open: true},
-    form: {id: "form_category", label: "Forms"},
-    components: {id: "components_category", label: "Components",open: true  },
+    form: {id: "form_category", label: "Forms", open: false},
+    layouts: {id: "layouts_category", label: "Layouts",open: true},
 }
 function base_blocks(editor) {
 
@@ -24,7 +24,7 @@ function base_blocks(editor) {
     
     
     editor.Blocks.add("column", {
-        label: `<i class="fa-light fa-square"></i></i><span>column</span>`,
+        label: `<i class="fa-regular fa-square"></i><span>column</span>`,
         attributes: {class: "block"},
         category: category.layouts,
         content: {
@@ -40,7 +40,7 @@ function base_blocks(editor) {
     });
 
     editor.Blocks.add("column_2", {
-        label: `<i class="fa-light fa-square"></i></i><span>column 2</span>`,
+        label: `<i class="fa-solid fa-table-columns"></i><span>column 2</span>`,
         attributes: {class: "block"},
         category: category.layouts,
         content: {
@@ -61,7 +61,7 @@ function base_blocks(editor) {
 
 
     editor.Blocks.add("column_3", {
-        label: `<i class="fa-light fa-square"></i></i><span>column 3</span>`,
+        label: `<i class="fas fa-columns"></i><span>column 3</span>`,
         attributes: {class: "block"},
         category: category.layouts,
         content: {
@@ -86,7 +86,7 @@ function base_blocks(editor) {
 
 
     editor.Blocks.add("2_column_3_7", {
-        label: `<i class="fa-light fa-square"></i></i><span>2 column 3/7</span>`,
+        label: `<i class="fas fa-columns"></i><span>2 column 3/7</span>`,
         attributes: {class: "block"},
         category: category.layouts,
         content: {

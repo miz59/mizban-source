@@ -10,7 +10,7 @@ import {commands} from "./js/commands/commands.js";
 import {editor_events} from "./js/events/editor_events.js";
 
 
-const plugins =  [base_blocks , base_component  , cssRules  , device_Manager , commands ,editor_events , flexColBlock];
+const   plugins =  [base_blocks , base_component  , cssRules  , device_Manager , commands ,editor_events , flexColBlock];
 
 
 

@@ -53,13 +53,12 @@ function importCode(editor) {
             viewer.refresh();
         }
     });
-    cmdm.add('html-import-test', {
+    cmdm.add('code-editor', {
         run: function (mainEditor, sender) {
-            codeImporterModal.setContent("");                
+            codeImporterModal.setContent("");
             codeImporterModal.setContent(container);
-            
+            mainEditor.Modal.setTitle(`Code Editor`);
             require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs' } });
-            
     mainEditor.on('block:drag:stop', function(){
         window.monacoEditor.setValue(mainEditor.getHtml());
         setTimeout(function () {
@@ -98,7 +97,6 @@ function importCode(editor) {
                         let code = window.monacoEditor.getValue();
                         mainEditor.DomComponents.getWrapper().set('content', '');
                         mainEditor.setComponents(code.trim());
-                        // mainEditor.setComponents(canvasHtml);
                     };
                 } else {
                     window.monacoEditor.setValue(mainEditor.getHtml());
@@ -114,7 +112,6 @@ function importCode(editor) {
                     container.setContent("");
                 };
             }); 
-    
 
             codeImporterModal.open();
         }

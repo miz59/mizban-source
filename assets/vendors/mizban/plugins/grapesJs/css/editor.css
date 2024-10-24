@@ -8,18 +8,10 @@
     padding: 0;
 }
 
-.block {
-    color: var(--primary-color);
-    margin-bottom: .8rem;
+.block{
+    justify-content: center !important;
+align-items: center !important;
 }
-
-
-.block:hover {
-    color: var(--primary-color-hover);
-    box-shadow: 0 0 3px 2px var(--primary-color);
-}
-
-
 
 .gjs-block {
     display: flex;
